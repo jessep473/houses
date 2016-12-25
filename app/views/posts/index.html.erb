@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<center>
+<h1>Posts</h1>
+<h2><%= link_to 'New Post', new_post_path %></h2>
+
+   
+ 
+</center>
+ 
+    <% @posts.each do |post| %>
+      <center>
+        <h2><%= post.name %></h2>
+        <p><%= post.description %></p>
+        <p><%= post.picture %></p>
+        </p></center>
+        
+          
+
+        
+      
+    <% end %>
+ 
+</center>
+<br>
+
+
